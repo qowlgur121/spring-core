@@ -1,8 +1,11 @@
 package hello.core.member;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class MemoryMemberRepository implements MemberRepository{
 
     //저장소이니까 저장할 공간이 필요하다. Map정도가 적당해보인다.
