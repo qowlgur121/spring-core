@@ -25,10 +25,5 @@ public class AutoAppConfigTest {
         MemberRepository memberRepository = bean.getMemberRepository();
         System.out.println("memberRepository = " + memberRepository);
 
-        OrderService orderService = ac.getBean(OrderService.class);
-        System.out.println("orderService = " + orderService);
-//        assertThrows(UnsatisfiedDependencyException.class,
-//                () -> ac.getBean(OrderService.class));
-
     }
 }
