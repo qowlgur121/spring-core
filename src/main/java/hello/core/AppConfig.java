@@ -31,7 +31,7 @@ public class AppConfig {
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
-    @Bean
+    //@Bean
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository(); //스프링 빈. @Bean이 붙은 메서드에서 반환한 객체를 "스프링 빈"이라 한다.
