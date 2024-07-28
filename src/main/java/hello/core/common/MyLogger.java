@@ -10,6 +10,7 @@ import java.util.UUID;
 @Component
 @Scope("request")
 public class MyLogger {
+    //로그를 출력하기 위한 클래스
 
     private String uuid;
     private String requestURL;
@@ -24,7 +25,7 @@ public class MyLogger {
 
     @PostConstruct
     public void init() {
-        uuid = UUID.randomUUID().toString();
+        uuid = UUID.randomUUID().toString(); //유니크아이디 생성
         System.out.println("[" + uuid + "] request scope bean create:" + this);
     }
 
